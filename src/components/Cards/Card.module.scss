@@ -1,0 +1,34 @@
+@import "..//../scss/components/variable.scss";
+
+.root {
+  display: flex;
+  max-width: 1920px;
+  background: #212529;
+  margin-top: 40px;
+  .title {
+    display: grid;
+    place-content: center;
+    color: $vivid-orange;
+    margin-top: 10px;
+    white-space: "nowrap";
+  }
+  h3 {
+    color: rgb(230, 230, 230);
+    margin-top: 30px;
+  }
+  .coffee__cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 900px) {
+    .coffee__cards {
+      display: grid;
+      place-content: center;
+    }
+    h3 {
+      margin-left: 100px;
+    }
+  }
+}
